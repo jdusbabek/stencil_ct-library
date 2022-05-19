@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  --disabled-background-color: #d5d5d5;
+}
+
+button {
+  padding: 8px;
+  border: 6px;
+}
+
+button:disabled {
+  background-color: var(--disabled-background-color);
+}
+
+button:hover {
+  background-color: rgb(134, 134, 134);
+  cursor: pointer;
+}

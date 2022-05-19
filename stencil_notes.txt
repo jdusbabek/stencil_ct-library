@@ -1,0 +1,31 @@
+npm init stencil components ct-library
+cd .\ct-library\
+npm install
+npm run start
+
+--> Interactive:
+npm init stencil
+https://stenciljs.com/docs/getting-started
+
+
+
+== Create a new component ==
+npx generate button-component
+
+
+== Build and Export ==
+kill live reload..
+npm run build
+npm link		(or distribute the dist package to npm)
+
+== In new project ==
+npm link ct-library 
+
+(main.ts)
+import {defineCustomElements} from 'ct-library/loader'
+
+defineCustomElements(window)
+
+see: checklist-frontend/src/index.tsx
+import { defineCustomElements } from "@ionic/pwa-elements/loader";
+defineCustomElements(window)

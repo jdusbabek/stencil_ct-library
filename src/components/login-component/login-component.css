@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  --login-bg: #b7b7b7;
+  --login-border: #e1e1e1;
+}
+
+form {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 10px;
+  background: var(--login-bg);
+  border: 2px solid var(--login-border);
+}
+
+label {
+  margin: 10px;
+}
+
+input {
+  margin-left: 20px;
+}
+
+ct-button {
+  text-align: center;
+}
